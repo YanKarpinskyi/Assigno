@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigno</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <button class="add-task">Add task</button>
+    <form id="add-task-form" class="task-form" style="display: none;">
+        <h3>Add New Task</h3>
+        <input type="text" id="task-name" placeholder="Name" required>
+        <textarea id="task-descr" placeholder="Description (optional)"></textarea>
+        
+        <div class="color-selector">
+            <div class="color-option blue selected" data-color="blue" title="Blue"></div>
+            <div class="color-option orange" data-color="orange" title="Orange"></div>
+            <div class="color-option green" data-color="green" title="Green"></div>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit">Add</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+        </div>
+    </form>
+    
+    <div class="tasks-wrapper">
+        <!-- Tasks will load from Firebase -->
+    </div>
+    
+    <button class="trashbox">
+        <img src="https://cdn-icons-png.flaticon.com/512/8569/8569152.png" alt="" width="30px">
+    </button>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
